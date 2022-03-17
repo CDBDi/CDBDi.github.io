@@ -1,0 +1,175 @@
+html {
+  box-sizing: border-box;
+  background-color: snow;
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* NAV BAR */
+nav {
+  width: 100%;
+  height: 175px;
+  background-color: wheat;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo {
+  display: inline-block;
+}
+.name {
+  position: absolute;
+  font-size: 3rem;
+  color: darkolivegreen;
+  right: 20px;
+  top: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: white;
+}
+
+.nav-item:hover a {
+  color: darkolivegreen;
+}
+
+.logo img {
+  width: 175px;
+  vertical-align: middle;
+}
+
+/* HEADINGS */
+
+.header--main {
+  font-weight: normal;
+  font-size: 50px;
+  color: black;
+}
+.header--secondary{
+  font-weight: 300;
+  font-size: 42px;
+  color: black;
+}
+.header--sub-header{
+   font-size: 21px;
+   color: grey;
+}
+
+/* MAIN */
+
+#intro-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 43.5rem;
+  background-image: url('../images/Farm-Background.jpeg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#intro-cta {
+  position: relative;
+  top: 171px
+  left: 10%;
+  padding: 0 5rem 2.5rem 5rem;
+  border: solid 1px #979797;
+  border-radius: 4px;
+  background-color: darkolivegreen;
+}
+
+#intro-cta .content {
+  width: 25.625rem;
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  border-radius: 3px;
+  color: snow;
+  color: darkolivegreen;
+}
+
+#intro-cta span {
+  text-align: center;
+}
+
+#intro-cta .button {
+  text-align: center;
+  margin: 1.625rem;
+  padding: 1.25rem 7.25rem;
+  background-color: wheat;
+  color: darkolivegreen;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+/*Quotes*/
+#quotes {
+  width: 100%;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: 5px solid grey;
+}
+
+
+/*Scroll Wheel*/
+
+.scroll-bar {
+  background-color: lightgrey;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  background-color: white;
+  height: 100%;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.content img{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* LINKS */
+
+.link--cta {
+  font-size: 16px;
+  color: aquamarine;
+}
+
+/* FOOTER */
+footer {
+  font-size: 21px;
+  color: grey;
+  text-align: right;
+}
