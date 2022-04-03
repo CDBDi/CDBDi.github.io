@@ -6,24 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Kaden Mior</title>
     <link rel="stylesheet" type="text/css" href="resources/css/Farm_Company_styles.css">
+    <script type="text/javascript" src="./nav.js" defer></script>
   </head>
 
   <body>
-    <nav class="navbar">
-      <a href="#" class="logo">
-        <img src="resources/images/Wheat_Logo.png" alt="generic logo">
-        <p><header class="name">
-          Generic Company Name
-        </header></p>
+    <header class="primary-header flex">
+      <div>
+          <a href="#">
+            <img src="resources/images/Wheat_Logo.png" alt="generic logo" class="logo">
+            <p>Generic Company Name</p>
+          </a>
+        </div>
 
-      </a>
-      <ul class="nav-links">
-        <li class="nav-item"><a href="#">Products</a></li>
-        <li class="nav-item"><a href="#">Placeholder</a></li>
-        <li class="nav-item"><a href="#">Sign-In</a></li>
-        <li class="nav-item"><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav class="navbar">
+          <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+            <li class="nav-item"><a href="#">Products</a></li>
+            <li class="nav-item"><a href="#">Placeholder</a></li>
+            <li class="nav-item"><a href="#">Sign-In</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
     <main>
 
       <!--Intro Section -->

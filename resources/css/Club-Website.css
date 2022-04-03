@@ -56,3 +56,46 @@ nav {
   width: 100px;
   vertical-align: middle;
 }
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: 130px 1fr 130px;
+  grid-template-rows: repeat(2, 1fr) 130px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.side-bar-left {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+
+  background-color: darkorange;
+}
+
+.side-bar-right {
+  grid-column: 3 / 4;
+  grid-row: 1 / -1;
+
+  background-color: darkorange;
+}
+.bottom-bar {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+
+  background-color: darkorange;
+}
+
+.grid-item{
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th,td {
+  padding: 7px;
+  border-bottom: 1px solid black;
+}
